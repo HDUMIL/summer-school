@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<html lang="{{ page.lang | default: site.lang | default: "zh" }}"></html>
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+        <div class="wrap">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+    <!-- jQuery and Boostrap -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Mathjax -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

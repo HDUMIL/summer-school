@@ -1,0 +1,16 @@
+# Site settings
+title: 媒体智能实验室 2019 暑期班
+email: acdoge.cao@gmail.com
+description: "研究生机器学习与深度学习入门课程"
+baseurl: "/summer-school"
+url: "https://hdumil.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
