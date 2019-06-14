@@ -1,5 +1,4 @@
 # 媒体智能实验室暑期班
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 <img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" height="150">
 
@@ -7,7 +6,7 @@
 
 <a href="http://mil.hdu.edu.cn/" target="_blank">实验室主页</a> | <a href="https://hdumil.github.io/summer-school/" target="_blank">课程主页</a> | <a href="https://github.com/hdumil" target="_blank">GitHub 主页</a> | <a href="https://github.com/hdumil/summer-school/issues" target="_blank">讨论区</a>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
 
 媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。
 
@@ -180,12 +179,11 @@ layout: default
 
 ## 贡献者名单
 
-感谢这些人为项目做出的杰出贡献：
+感谢以下人员为项目发展做出的贡献：
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 
 <table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/fei_gao/index.html"><img src="https://avatars0.githubusercontent.com/u/3213419?v=4" width="100px;" alt="Fei"/><br /><sub><b>Fei</b></sub></a><br /><a href="#ideas-fei-hdu" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-fei-hdu" title="Event Organizing">📋</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/zhou_yu/index.html"><img src="https://avatars2.githubusercontent.com/u/9126588?v=4" width="100px;" alt="Zhou Yu"/><br /><sub><b>Zhou Yu</b></sub></a><br /><a href="#ideas-yuzcccc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-yuzcccc" title="Event Organizing">📋</a></td><td align="center"><a href="https://github.com/Zjutanmin"><img src="https://avatars1.githubusercontent.com/u/26560575?v=4" width="100px;" alt="Zjutanmin"/><br /><sub><b>Zjutanmin</b></sub></a><br /><a href="#ideas-Zjutanmin" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-Zjutanmin" title="Event Organizing">📋</a></td></tr></table>
-
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
