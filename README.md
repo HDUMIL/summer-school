@@ -1,4 +1,5 @@
 # 媒体智能实验室暑期班
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 <img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" height="150">
 
@@ -176,3 +177,15 @@ layout: default
 ## 使用协议
 
 本项目使用 [MIT](./LICENSE) 协议，允许二次使用，请勿擅自修改协议内容。
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
