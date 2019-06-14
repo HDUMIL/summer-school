@@ -28,6 +28,16 @@
         "ideas",
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "yuzcccc",
+      "name": "Zhou Yu",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9126588?v=4",
+      "profile": "http://mil.hdu.edu.cn/people/zhou_yu/index.html",
+      "contributions": [
+        "ideas",
+        "eventOrganizing"
+      ]
     }
   ],
   "contributorsPerLine": 7,
