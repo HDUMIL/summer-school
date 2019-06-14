@@ -1,13 +1,12 @@
 # 媒体智能实验室暑期班
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" height="150">
+<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" style="max-height:150px;">
 
 ------
 
 <a href="http://mil.hdu.edu.cn/" target="_blank">实验室主页</a> | <a href="https://hdumil.github.io/summer-school/" target="_blank">课程主页</a> | <a href="https://github.com/hdumil" target="_blank">GitHub 主页</a> | <a href="https://github.com/hdumil/summer-school/issues" target="_blank">讨论区</a>
 
-![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
 
 媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。
 
@@ -45,10 +44,12 @@ assets/                       # 统一用于存放静态文件资源
 
 assignments/                  # 存放作业说明与相关文件
 notebooks/                    # 存放 .ipynb 后缀的文件，常用于助教演示
-notes/                        # 存放受欢迎的学生报告，通常为 .md 文件
+notes/                        # 存放受欢迎的学生笔记，通常为 .md 文件
+projects/                     # 存放受欢迎的学生项目，通常为 .py 文件
 slides/                       # 存放 PDF 格式幻灯片，为讲座对应内容
 
 _config.yml                   # 网站全局设置信息
+announcement.md               # 独立页面，使用 Markdown 语法渲染
 index.html                    # 网站默认 index 主页，必须设置
 ```
 
@@ -73,7 +74,7 @@ index.html                    # 网站默认 index 主页，必须设置
 <div class="instructor" id="{name}">
     <a href="{url}" target="_blank">
         <div class="instructorphoto">
-            <img class="img-hover" src="assets/img/{name}.{jpg/png/...}">
+            <img class="img-hover" src="{{ "/assets/img/{name}.{jpg/png/...}" | prepend: site.baseurl }}">
         </div>
         <div>{名称}</div>
     </a>
@@ -116,6 +117,17 @@ index.html                    # 网站默认 index 主页，必须设置
 目前已经提供的有 `active` , `info` , `warning` 与  `danger`.
 
 为了更好的控制样式，如单元格合并居中等，时间表不推荐使用 Markdown 语法。
+
+### 如何链接/引用内部文件
+
+由于项目存在 `baseurl`, 为确保 `src` 资源路径正确，请统一采用如下写法：
+
+```html
+src  = "{{ "/url.file" | prepend: site.baseurl }}"
+href = "{{ "/url.file" | prepend: site.baseurl }}"
+```
+
+其中 `/url.file` 为相对根目录的路径，该语法将网站 `baseurl` 作为前缀进行了补全。
 
 ### 其它维护说明
 
@@ -170,7 +182,7 @@ layout: default
 
 ### 进阶使用
 
-你可以根据实际情况，设计一些新的页面或渲染模板以加强互动性和丰富性，参考 Jekyll Themes.
+你可以根据实际情况，设计一些新的页面或渲染模板以加强互动性和丰富性，如 `announcement.md`.
 
 甚至可以完全脱离 Jekyll 引擎范围，自由地开发新的静态页面(但是不推荐这样做)。
 
@@ -178,14 +190,13 @@ layout: default
 
 本项目使用 [MIT](./LICENSE) 协议，允许二次使用，请勿擅自修改协议内容。
 
-## Contributors
+## 贡献者名单
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感谢以下人员为项目发展做出的贡献：
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Code">💻</a></td></tr></table>
+
+<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Code">💻</a><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/fei_gao/index.html"><img src="https://avatars0.githubusercontent.com/u/3213419?v=4" width="100px;" alt="Fei"/><br /><sub><b>Fei</b></sub></a><br /><a href="#ideas-fei-hdu" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-fei-hdu" title="Event Organizing">📋</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/zhou_yu/index.html"><img src="https://avatars2.githubusercontent.com/u/9126588?v=4" width="100px;" alt="Zhou Yu"/><br /><sub><b>Zhou Yu</b></sub></a><br /><a href="#ideas-yuzcccc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-yuzcccc" title="Event Organizing">📋</a></td><td align="center"><a href="https://github.com/Zjutanmin"><img src="https://avatars1.githubusercontent.com/u/26560575?v=4" width="100px;" alt="Zjutanmin"/><br /><sub><b>Zjutanmin</b></sub></a><br /><a href="#ideas-Zjutanmin" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-Zjutanmin" title="Event Organizing">📋</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
