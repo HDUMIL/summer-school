@@ -1,22 +1,24 @@
 # 媒体智能实验室暑期班
 
-<img style="max-width:70%;" src="./assets/img/mil.png">
+<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" height="150">
+
+------
 
 <a href="http://mil.hdu.edu.cn/" target="_blank">实验室主页</a> | <a href="https://hdumil.github.io/summer-school/" target="_blank">课程主页</a> | <a href="https://github.com/hdumil" target="_blank">GitHub 主页</a> | <a href="https://github.com/hdumil/summer-school/issues" target="_blank">讨论区</a>
 
-![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Jekyll-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
+![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
 
 媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。
 
 每年暑期将为新入学研究生安排入门课程，进行基础内容的讲解，并培养相关科研能力。每一期暑期班的讲座内容都会有所差异，请注意当前项目对应的学期时间，你可以找到一份 [2017&2018](https://github.com/hdumil/cama_summer_school_2017) 学期的存档作为参考。
 
-## 维护人员文档
+## 开发人员文档
 
-静态网站基于 GitHub Pages 使用 [Jekyll](https://jekyllrb.com/) 引擎渲染，使用 Liquid 语法。
+静态网站基于 GitHub Pages 环境，使用 [Jekyll](https://jekyllrb.com/) 引擎渲染，支持 Liquid 语法。
 
 本项目未使用任何 Jekyll 主题，大部分网页内容修改只需要基础的 HTML / CSS / JS 前端知识。
 
-项目允许被 Fork, 使用 Clone 建议将 `depth` 设置为 1，非管理人员发起的 PR 请求会被直接忽略。
+项目允许被 Fork, 使用 Clone 功能时建议将 `depth` 设置为 1，非管理人员发起的 PR 请求会被直接忽略。
 
 如果对当前项目的使用有任何疑问，请发送邮件到 acdoge[dot]cao[at]gmail[dot]com
 
@@ -49,9 +51,12 @@ _config.yml                   # 网站全局设置信息
 index.html                    # 网站默认 index 主页，必须设置
 ```
 
-目录与文件命名规范：
+文件命名规范：
 
-- 不得出现中文命名与空格，英文统一使用 `-` 作为连词符号，框架文件添加 `_` 前缀；
+- 不得出现中文命名与空格，英文统一小写，使用 `-` 作为连词符号，框架文件添加 `_` 前缀；
+- 资源必须采用资源名词的复数形式，如 `notes` 而不是 `note`;
+- 父子目录与文件之间的层级关系不得超过三级，如 `/assets/img/favicon.ico` 为极限情况；
+- 如果是内容资源的 URL, 需去除尾部参数，如 `http://www.domian/com/users.html?id=1` 需改为 `http://www.domian/com/users/1`.
 
 ### 如何修改课程人员信息
 
@@ -103,9 +108,9 @@ index.html                    # 网站默认 index 主页，必须设置
 </tr>
 ```
 
-在 `<tr class="active">` 中使用 `class` 控制表格背景，
+在 `<tr class="active">` 中使用 `class` 控制表格背景颜色，
 
-也可以在 `/assets/css/main.css`中自定义新样式，
+也可以在 `/assets/css/main.css`中自定义新样式，起到想要的视觉效果，
 
 目前已经提供的有 `active` , `info` , `warning` 与  `danger`.
 
@@ -114,6 +119,7 @@ index.html                    # 网站默认 index 主页，必须设置
 ### 其它维护说明
 
 Jekyll 引擎支持以 Markdown 语法进行渲染，即使用 `.md` 文件代替 `.html` 文件。
+
 想要触发模板渲染机制，请使用 YAML 头写法，例如：
 
 ```YAML
@@ -121,6 +127,8 @@ Jekyll 引擎支持以 Markdown 语法进行渲染，即使用 `.md` 文件代�
 layout: default
 ---
 ```
+
+`.md` 文件中可以混用 Markdown 与 HTML 语法，常用于图片参数，居中等情况。
 
 默认网页渲染格式参考 `default.html` 文件：
 
@@ -155,8 +163,8 @@ layout: default
 - 由于 GitHub 服务器在国内不稳定，CSS / JS 文件尽可能使用国内 CDN 进行加速；
 - JS 文件通常在 `_layouts` 网页源码内 `footer.html` 下方按需加载，加快访问速度；
 - 由于图片为非二进制文件容易影响 `git` 体积，建议使用稳定图床，或通过 TinyJPG 网站压缩后上传；
-- 对于类似的非二进制文件，建议使用国内服务器空间进行存储，或提供镜像下载源
-- 请勿在开源文件中，包括 Commits 等记录中泄露个人信息或者保密信息；
+- 对于类似的非二进制文件，建议使用国内 CDN 进行代理缓存，或提供镜像下载源；
+- 请勿在开源过程中，包括 Commits 等记录中泄露个人信息或者保密信息；
 - 关于网页渲染机制的更多说明请查阅 Jekyll 官方文档。
 
 ### 进阶使用
