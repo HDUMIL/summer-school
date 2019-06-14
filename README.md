@@ -1,8 +1,8 @@
 # 媒体智能实验室暑期班
 
-<img style="max-width:750px;" src="./assets/img/mil.png">
+<img style="max-width:70%;" src="./assets/img/mil.png">
 
-[实验室主页](http://mil.hdu.edu.cn/) | [课程主页](https://hdumil.github.io/summer-school/) | [GitHub 主页](https://github.com/hdumil) | [讨论区](https://github.com/hdumil/summer-school/issues)
+<a href="http://mil.hdu.edu.cn/" target="_blank">实验室主页</a> | <a href="https://hdumil.github.io/summer-school/" target="_blank">课程主页</a> | <a href="https://github.com/hdumil" target="_blank">GitHub 主页</a> | <a href="https://github.com/hdumil/summer-school/issues" target="_blank">讨论区</a>
 
 ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Jekyll-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
 
