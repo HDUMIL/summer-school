@@ -1,4 +1,5 @@
 # 媒体智能实验室暑期班
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 <img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" height="150">
 
@@ -183,6 +184,6 @@ layout: default
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
+<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/fei_gao/index.html"><img src="https://avatars0.githubusercontent.com/u/3213419?v=4" width="100px;" alt="Fei"/><br /><sub><b>Fei</b></sub></a><br /><a href="#ideas-fei-hdu" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-fei-hdu" title="Event Organizing">📋</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/zhou_yu/index.html"><img src="https://avatars2.githubusercontent.com/u/9126588?v=4" width="100px;" alt="Zhou Yu"/><br /><sub><b>Zhou Yu</b></sub></a><br /><a href="#ideas-yuzcccc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-yuzcccc" title="Event Organizing">📋</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
