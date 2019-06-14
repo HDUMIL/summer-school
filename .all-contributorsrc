@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "AcceptedDoge",
+      "name": "Accepted Doge",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/21091736?v=4",
+      "profile": "http://accepteddoge.com",
+      "contributions": [
+        "design",
+        "question",
+        "content",
+        "doc",
+        "example",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "summer-school",
+  "projectOwner": "hdumil",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
