@@ -1,6 +1,6 @@
 # 媒体智能实验室暑期班
 
-<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" height="150">
+<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" style="max-height:150px;">
 
 ------
 
@@ -44,10 +44,12 @@ assets/                       # 统一用于存放静态文件资源
 
 assignments/                  # 存放作业说明与相关文件
 notebooks/                    # 存放 .ipynb 后缀的文件，常用于助教演示
-notes/                        # 存放受欢迎的学生报告，通常为 .md 文件
+notes/                        # 存放受欢迎的学生笔记，通常为 .md 文件
+projects/                     # 存放受欢迎的学生项目，通常为 .py 文件
 slides/                       # 存放 PDF 格式幻灯片，为讲座对应内容
 
 _config.yml                   # 网站全局设置信息
+announcement.md               # 独立页面，使用 Markdown 语法渲染
 index.html                    # 网站默认 index 主页，必须设置
 ```
 
@@ -72,7 +74,7 @@ index.html                    # 网站默认 index 主页，必须设置
 <div class="instructor" id="{name}">
     <a href="{url}" target="_blank">
         <div class="instructorphoto">
-            <img class="img-hover" src="assets/img/{name}.{jpg/png/...}">
+            <img class="img-hover" src="{{ "/assets/img/{name}.{jpg/png/...}" | prepend: site.baseurl }}">
         </div>
         <div>{名称}</div>
     </a>
@@ -115,6 +117,17 @@ index.html                    # 网站默认 index 主页，必须设置
 目前已经提供的有 `active` , `info` , `warning` 与  `danger`.
 
 为了更好的控制样式，如单元格合并居中等，时间表不推荐使用 Markdown 语法。
+
+### 如何链接/引用内部文件
+
+由于项目存在 `baseurl`, 为确保 `src` 资源路径正确，请统一采用如下写法：
+
+```html
+src  = "{{ "/url.file" | prepend: site.baseurl }}"
+href = "{{ "/url.file" | prepend: site.baseurl }}"
+```
+
+其中 `/url.file` 为相对根目录的路径，该语法将网站 `baseurl` 作为前缀进行了补全。
 
 ### 其它维护说明
 
@@ -169,7 +182,7 @@ layout: default
 
 ### 进阶使用
 
-你可以根据实际情况，设计一些新的页面或渲染模板以加强互动性和丰富性，参考 Jekyll Themes.
+你可以根据实际情况，设计一些新的页面或渲染模板以加强互动性和丰富性，如 `announcement.md`.
 
 甚至可以完全脱离 Jekyll 引擎范围，自由地开发新的静态页面(但是不推荐这样做)。
 
