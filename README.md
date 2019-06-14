@@ -1,12 +1,12 @@
 # 媒体智能实验室暑期班
 
-![mil](./assets/img/mil.png)
+<img style="max-width:750px;" src="./assets/img/mil.png">
 
 [实验室主页](http://mil.hdu.edu.cn/) | [课程主页](https://hdumil.github.io/summer-school/) | [GitHub 主页](https://github.com/hdumil) | [讨论区](https://github.com/hdumil/summer-school/issues)
 
-![semester](https://img.shields.io/badge/semester-2019-blue.svg)![build](https://img.shields.io/badge/build-passing-orange.svg)![license](https://img.shields.io/badge/license-MIT-green.svg)![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Jekyll-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
+![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Jekyll-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
 
-媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。 
+媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。
 
 每年暑期将为新入学研究生安排入门课程，进行基础内容的讲解，并培养相关科研能力。每一期暑期班的讲座内容都会有所差异，请注意当前项目对应的学期时间，你可以找到一份 [2017&2018](https://github.com/hdumil/cama_summer_school_2017) 学期的存档作为参考。
 
