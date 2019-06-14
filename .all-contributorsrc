@@ -18,6 +18,16 @@
         "example",
         "ideas"
       ]
+    },
+    {
+      "login": "fei-hdu",
+      "name": "Fei",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3213419?v=4",
+      "profile": "http://mil.hdu.edu.cn/people/fei_gao/index.html",
+      "contributions": [
+        "ideas",
+        "eventOrganizing"
+      ]
     }
   ],
   "contributorsPerLine": 7,
