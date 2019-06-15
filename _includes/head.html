@@ -1,23 +1,20 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>{{ site.title }} | {{ site.description }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<title>{{ site.title }} | {{ site.description }}</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Favicon Setting -->
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+<!-- Favicon Setting -->
+<link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}">
 
-    <!-- Boostrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<!-- Boostrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-    <!-- Foont Awesome-->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.8.2/css/all.min.css">
+<!-- Foont Awesome-->
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.8.2/css/all.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-
-</head>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">

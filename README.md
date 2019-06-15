@@ -1,6 +1,6 @@
 # 媒体智能实验室暑期班
 
-<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" style="max-height:150px;">
+<img alt="Media Intelligence Laboratory" src="./assets/img/mil.png" style="max-height:150px">
 
 ------
 
@@ -31,7 +31,8 @@ _includes/                    # 存放可被重用或作为局部模板的 HTML 
   schedule.html               # 课程大纲时间表
   ...
   head.html                   # 网站头信息，多存放 meta 与 CSS
-  header.html                 # 网站头部内容，多存放标题与导航块
+  nav.html                    # 网站导航栏，多存放 navigation
+  header.html                 # 网站头部内容，多存放标题与头部图
   footer.html                 # 网站尾部内容，多存放网站说明信息
 
 _layouts/                     # 渲染规则，即网页模板，默认为 default.html
@@ -128,6 +129,7 @@ href = "{{ "/url.file" | prepend: site.baseurl }}"
 ```
 
 其中 `/url.file` 为相对根目录的路径，该语法将网站 `baseurl` 作为前缀进行了补全。
+在 `CSS` 文件中直接使用资源相对路径即可，如 `url("../img/bg-pattern.png")`.
 
 ### 其它维护说明
 
@@ -197,6 +199,6 @@ layout: default
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 
-<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Code">💻</a><a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/fei_gao/index.html"><img src="https://avatars0.githubusercontent.com/u/3213419?v=4" width="100px;" alt="Fei"/><br /><sub><b>Fei</b></sub></a><br /><a href="#ideas-fei-hdu" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-fei-hdu" title="Event Organizing">📋</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/zhou_yu/index.html"><img src="https://avatars2.githubusercontent.com/u/9126588?v=4" width="100px;" alt="Zhou Yu"/><br /><sub><b>Zhou Yu</b></sub></a><br /><a href="#ideas-yuzcccc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-yuzcccc" title="Event Organizing">📋</a></td><td align="center"><a href="https://github.com/Zjutanmin"><img src="https://avatars1.githubusercontent.com/u/26560575?v=4" width="100px;" alt="Zjutanmin"/><br /><sub><b>Zjutanmin</b></sub></a><br /><a href="#ideas-Zjutanmin" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-Zjutanmin" title="Event Organizing">📋</a></td></tr></table>
+<table><tr><td align="center"><a href="http://accepteddoge.com"><img src="https://avatars2.githubusercontent.com/u/21091736?v=4" width="100px;" alt="Accepted Doge"/><br /><sub><b>Accepted Doge</b></sub></a><br /><a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Code">💻</a> <a href="#design-AcceptedDoge" title="Design">🎨</a> <a href="#question-AcceptedDoge" title="Answering Questions">💬</a> <a href="#content-AcceptedDoge" title="Content">🖋</a> <a href="https://github.com/hdumil/summer-school/commits?author=AcceptedDoge" title="Documentation">📖</a> <a href="#example-AcceptedDoge" title="Examples">💡</a> <a href="#ideas-AcceptedDoge" title="Ideas, Planning, & Feedback">🤔</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/fei_gao/index.html"><img src="https://avatars0.githubusercontent.com/u/3213419?v=4" width="100px;" alt="Fei"/><br /><sub><b>Fei</b></sub></a><br /><a href="#ideas-fei-hdu" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-fei-hdu" title="Event Organizing">📋</a></td><td align="center"><a href="http://mil.hdu.edu.cn/people/zhou_yu/index.html"><img src="https://avatars2.githubusercontent.com/u/9126588?v=4" width="100px;" alt="Zhou Yu"/><br /><sub><b>Zhou Yu</b></sub></a><br /><a href="#ideas-yuzcccc" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-yuzcccc" title="Event Organizing">📋</a></td><td align="center"><a href="https://github.com/Zjutanmin"><img src="https://avatars1.githubusercontent.com/u/26560575?v=4" width="100px;" alt="Zjutanmin"/><br /><sub><b>Zjutanmin</b></sub></a><br /><a href="#ideas-Zjutanmin" title="Ideas, Planning, & Feedback">🤔</a> <a href="#eventOrganizing-Zjutanmin" title="Event Organizing">📋</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->

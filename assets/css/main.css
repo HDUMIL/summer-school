@@ -56,6 +56,188 @@ a:visited {
     color: #205caa;
 }
 
+/* Head styles */
+/* ----------------------------------------------------------*/
+.navbar-default {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #a90531;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #fcbd20;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+    font-size: 12px;
+    color: #222222;
+    padding: 8px 10px;
+}
+
+.navbar-default .nav>li>a {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.navbar-default .nav>li>a,
+.navbar-default .nav>li>a:focus {
+    color: #222222;
+}
+
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #a90531;
+}
+
+.navbar-default .nav>li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #a90531 !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: white;
+    }
+
+    .navbar-default .nav>li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: white;
+    }
+
+    .navbar-default.affix {
+        background-color: white;
+        border-color: rgba(34, 34, 34, 0.1);
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        color: #222222;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #a90531;
+    }
+
+    .navbar-default.affix .nav>li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222222;
+    }
+
+    .navbar-default.affix .nav>li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #a90531;
+    }
+}
+
+#mainNav #page-title #page-introduction {
+    font: 400 1em/1.8 Avenir,
+    'Segoe UI',
+    'Hiragino Sans GB',
+    STHeiti,
+    'Microsoft Yahei',
+    'Microsoft Sans Serif',
+    'WenQuanYi Micro Hei',
+    sans-serif;
+}
+
+#page-title {
+    font-size: 1.5em;
+}
+
+#header {
+    background: #a90531;
+    /* fallback for old browsers */
+    background: url("../img/bg-pattern.png"),
+    -webkit-linear-gradient(to left, #370cc5, #620cc5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url("../img/bg-pattern.png"),
+    linear-gradient(to left, #370cc5, #620cc5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding: 30px 0px;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+        margin-top: 50px;
+        padding-top: 30px;
+    }
+}
+
+section {
+    padding: 30px 0;
+}
+
+.section-heading {
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    margin-bottom: 0;
+}
+
+section.features .device-container,
+section.features .feature-item {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section.features .feature-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.features .feature-item i {
+    font-size: 80px;
+    background: -webkit-linear-gradient(to left, #c50c3e, #a90531);
+    background: linear-gradient(to left, #c50c3e, #a90531);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+
+    section.features .device-container,
+    section.features .feature-item {
+        max-width: none;
+    }
+}
+
 /* Utility */
 
 .wrap:before,
