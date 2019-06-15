@@ -129,7 +129,8 @@ href = "{{ "/url.file" | prepend: site.baseurl }}"
 ```
 
 其中 `/url.file` 为相对根目录的路径，该语法将网站 `baseurl` 作为前缀进行了补全。
-在 `CSS` 文件中直接使用资源相对路径即可，如 `url("../img/bg-pattern.png")`.
+
+而在 `CSS` 等不会被渲染的文件中直接使用资源相对路径即可，如 `url("../img/bg-pattern.png")`.
 
 ### 其它维护说明
 
