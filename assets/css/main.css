@@ -56,8 +56,20 @@ a:visited {
     color: #205caa;
 }
 
-/* Head styles */
-/* ----------------------------------------------------------*/
+/* Table styles */
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px solid #ddd;
+    word-break: break-word;
+}
+/* Navigation styles */
+
 .navbar-default {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
@@ -174,6 +186,8 @@ a:visited {
     sans-serif;
 }
 
+/* Head styles */
+
 #page-title {
     font-size: 1.5em;
 }
@@ -258,8 +272,6 @@ section.features .feature-item i {
 }
 
 /* Layout Styles */
-
-/* Custom CSS rules for index page */
 
 .instructor {
     display: inline-block;
@@ -482,16 +494,13 @@ section.features .feature-item i {
 
 
 /* Page Content styles */
-/* ----------------------------------------------------------*/
 
 .page-content {
-    padding: 10px 0;
     background-color: #fff;
 }
 
 
 /* Home styles */
-/* ----------------------------------------------------------*/
 
 .home h1 {
     margin-bottom: 25px;
@@ -519,7 +528,7 @@ section.features .feature-item i {
 
 
 /* Post styles */
-/* ----------------------------------------------------------*/
+
 
 .post-header {
     margin: 10px 0 30px;
@@ -630,7 +639,7 @@ section.features .feature-item i {
 }
 
 /* Syntax highlighting styles */
-/* ----------------------------------------------------------*/
+
 
 .highlight {
     background: #ffffff;
@@ -948,7 +957,6 @@ section.features .feature-item i {
 /* Literal.Number.Integer.Long */
 
 /* media queries */
-/* ----------------------------------------------------------*/
 
 
 @media screen and (max-width: 750px) {
