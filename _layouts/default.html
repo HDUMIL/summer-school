@@ -13,10 +13,26 @@
     {% include header.html %}
 
     <section id="content" class="page-content wrap">
-            {{ content }}
+        {{ content }}
     </section>
 
     {% include footer.html %}
+
+    <!-- Mathjax Config -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        jax: ["input/TeX", "output/CommonHTML"],
+        tex2jax: {
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$']],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        },
+        messageStyle: "none",
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        CommonHTML: { linebreaks: { automatic: true } }
+    });
+    </script>
 
     <!-- jQuery / Easing / Boostrap / Mathjax -->
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
