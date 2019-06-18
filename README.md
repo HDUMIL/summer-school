@@ -14,11 +14,13 @@
 
 ## 开发人员文档
 
-静态网站基于 GitHub Pages 环境，使用 [Jekyll](https://jekyllrb.com/) 引擎渲染，支持 Liquid 语法。
+静态网站基于 GitHub Pages 驱动，使用 [Jekyll](https://jekyllrb.com/) 引擎渲染，支持 Liquid 语法。
 
-本项目未使用任何 Jekyll 主题，大部分网页内容修改只需要基础的 HTML / CSS / JS 前端知识。
+本项目未使用任何 Jekyll 主题和额外插件，大部分网页内容修改只需要基础的 HTML / CSS / JS 前端知识。
 
 项目允许被 Fork, 使用 Clone 功能时建议将 `depth` 设置为 1，非管理人员发起的 PR 请求会被直接忽略。
+
+本地渲染网站请在根目录运行 `jekyll serve` 命令，需提前安装和配置 Ruby 和 Jekyll 环境。
 
 如果对当前项目的使用有任何疑问，请发送邮件到 acdoge[dot]cao[at]gmail[dot]com
 
