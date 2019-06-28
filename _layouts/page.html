@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "zh" }}">
+
+{% include comment.html %}
+
+<head>
+    {% include head.html %}
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top affix" id="mainNav">
+    <div class="container wrap">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"><span class="sr-only">响应式导航</span>导航<i
+                    class="fa fa-bars"></i></button><a class="navbar-brand page-scroll"
+                href="{{ "/" | prepend: site.baseurl }}">媒体智能实验室</a>
+        </div><!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="header">
+    <div class="container">
+        <div class="row wrap">
+            <div class="col-lg-9">
+                <h1 id="page-title">{{ page.title }}</h1>
+                <h2 id="page-introduction">{{ page.description }}</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body>
+
+    <section id="content" class="page-content wrap">
+        {{ content }}
+    </section>
+
+    {% include footer.html %}
+
+    <!-- Mathjax Config -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        jax: ["input/TeX", "output/CommonHTML"],
+        tex2jax: {
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$']],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        },
+        messageStyle: "none",
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        CommonHTML: { linebreaks: { automatic: true } }
+    });
+    </script>
+
+    <!-- jQuery / Easing / Boostrap / Mathjax -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+    <!-- Custom JS -->
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+</body>
+
+</html>

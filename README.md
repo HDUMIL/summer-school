@@ -47,8 +47,8 @@ assets/                       # 统一用于存放静态文件资源
 
 assignments/                  # 存放作业说明与相关文件
 notebooks/                    # 存放 .ipynb 后缀的文件，常用于助教演示
-notes/                        # 存放受欢迎的学生笔记，通常为 .md 文件
-projects/                     # 存放受欢迎的学生项目，通常为 .py 文件
+notes/                        # 存放受欢迎的学生笔记，通常为 .ipynb 文件
+projects/                     # 存放受欢迎的学生项目，通常为 .py 与说明文件
 slides/                       # 存放 PDF 格式幻灯片，为讲座对应内容
 
 _config.yml                   # 网站全局设置信息
