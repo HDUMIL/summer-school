@@ -6,7 +6,7 @@
 
 <a href="http://mil.hdu.edu.cn/" target="_blank">实验室主页</a> | <a href="https://hdumil.github.io/summer-school/" target="_blank">课程主页</a> | <a href="https://github.com/hdumil" target="_blank">GitHub 主页</a> | <a href="https://github.com/hdumil/summer-school/issues" target="_blank">讨论区</a>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![build](https://img.shields.io/badge/build-passing-orange.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
 
 媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。
 
@@ -39,6 +39,7 @@ _includes/                    # 存放可被重用或作为局部模板的 HTML 
 
 _layouts/                     # 渲染规则，即网页模板，默认为 default.html
   default.html
+  page.html
 
 assets/                       # 统一用于存放静态文件资源
   css/                        # 存放 CSS 层叠样式表文件
@@ -46,10 +47,10 @@ assets/                       # 统一用于存放静态文件资源
   js/                         # 存放 Javascript 脚本
 
 assignments/                  # 存放作业说明与相关文件
-notebooks/                    # 存放 .ipynb 后缀的文件，常用于助教演示
-notes/                        # 存放受欢迎的学生笔记，通常为 .ipynb 文件
-projects/                     # 存放受欢迎的学生项目，通常为 .py 与说明文件
-slides/                       # 存放 PDF 格式幻灯片，为讲座对应内容
+notebooks/                    # 存放教程文件，常用于讨论环节
+notes/                        # 存放助教或学生提供的笔记
+projects/                     # 存放最终学生个人或分组完成的项目
+slides/                       # 存放可公开的幻灯片，为讲座对应内容
 
 _config.yml                   # 网站全局设置信息
 announcement.md               # 独立页面，使用 Markdown 语法渲染
@@ -152,8 +153,7 @@ layout: default
 
 ```html
 <!DOCTYPE html>
-<html>
-<html lang="{{ page.lang | default: site.lang | default: "zh" }}"></html>
+<html lang="{{ page.lang | default: site.lang | default: "zh" }}">
 
 {% include head.html %}
 
@@ -178,16 +178,16 @@ layout: default
 
 注意事项：
 
-- 由于 GitHub 服务器在国内不稳定，CSS / JS 文件尽可能使用国内 CDN 进行加速；
-- JS 文件通常在 `_layouts` 网页源码内 `footer.html` 下方按需加载，加快访问速度；
+- 由于 GitHub 服务器在国内不稳定，CSS / JS 文件尽可能使用国内公共 CDN 进行加速；
+- JS 文件通常在 `_layouts` 网页源码内 `footer.html` 下方按需加载，加快页面元素显示速度；
 - 由于图片为非二进制文件容易影响 `git` 体积，建议使用稳定图床，或通过 TinyJPG 网站压缩后上传；
-- 对于类似的非二进制文件，建议使用国内 CDN 进行代理缓存，或提供镜像下载源；
+- 对于类似的非二进制文件，建议使用国内 CDN 进行代理缓存，或提供镜像下载源地址；
 - 请勿在开源过程中，包括 Commits 等记录中泄露个人信息或者保密信息；
 - 关于网页渲染机制的更多说明请查阅 Jekyll 官方文档。
 
 ### 进阶使用
 
-你可以根据实际情况，设计一些新的页面或渲染模板以加强互动性和丰富性，如 `announcement.md`.
+你可以根据实际情况，设计一些新的页面或渲染模板以加强互动性和丰富性。
 
 甚至可以完全脱离 Jekyll 引擎范围，自由地开发新的静态页面(但是不推荐这样做)。
 

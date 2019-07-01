@@ -1,4 +1,3 @@
-*.ipynb
 .bundle
 .sass-cache
 Gemfile.lock
@@ -6,6 +5,8 @@ _site
 *.gem
 
 # Byte-compiled / optimized / DLL files
+.ipynb_checkpoints
+.ipynb_checkpoints/
 __pycache__/
 *.py[cod]
 *$py.class
