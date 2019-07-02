@@ -6,9 +6,11 @@ description: 第一周为缓冲阶段，学写代码，无需提交实验结果�
 
 <div class="module-header">使用说明</div>
 <ul>
-  <li>请确保在你的电脑上已经安装好 Anaconda 3，并配置有相应的科学计算环境。如果还没安装：</li>
-  <li>可使用 GitHub / Binder 在云端预览 notebook 内容，但可能会缺失需要的库或包支持。</li>
-  <li>可使用 Google Colab 在云端运行 notebook 文件，默认支持 Numpy 等科学计算环境。</li>
+  <li>请确保在你的电脑上已经安装好 Anaconda 3，并配置有相应的科学计算环境，保证完美运行。</li>
+  <ul>如果还没安装和配置好环境，临时解决方法为：
+    <li>可使用 GitHub 在云端预览 notebook 内容；Binder 可直接在云端运行，但只有 Python 默认环境。</li>
+    <li>可使用 Google Colab 在云端运行 notebook 文件，默认支持 Numpy 等科学计算环境（推荐）。</li>
+  </ul>
 </ul>
 
 
@@ -19,11 +21,11 @@ description: 第一周为缓冲阶段，学写代码，无需提交实验结果�
 
   <p>Anaconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载。</p>
   <p>TUNA 还提供了 Anaconda 仓库的镜像，运行以下命令:</p>
-      <pre class="highlighter-rouge">conda config --add channels
+  <pre class="highlighter-rouge">conda config --add channels
 https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes</pre>
-      即可添加 Anaconda Python 免费仓库。
+  即可添加 Anaconda Python 免费仓库。
 </details>
 
 <details>
@@ -43,21 +45,31 @@ conda config --set show_channel_urls yes</pre>
 
 <details>
   <summary>Jupyter Notebook 常用快捷键</summary>
-  https://shortcutworld.com/Jupyter-Notebook/win/Jupyter-Notebook_Shortcuts
+  https://shortcutworld.com/Jupyter-Notebook/win/Jupyter-Notebook_Shortcuts （谷歌一下）
 </details>
 
 <div class="module-header">练习材料</div>
 
-以下所有代码和文件在 Windows 10 + Anaconda 3 + Python 3.7 + Jupyter Notebook 环境下能正常使用。
+以下所有代码和文件在 Windows 10 + Anaconda 3 + Python 3.7 + Jupyter Notebook 环境下能正常使用。<br>
+如果你的本地环境配置好后仍无法运行，请先尝试自行分析解决，一段时间后再向助教寻求帮助。<br>
+所有笔记本文件可以在 <a href="https://github.com/HDUMIL/summer-school/tree/master/notebooks/" target="_blank">这个链接</a> 找到，有的时候
+assets 文件夹中的文件(如图片) 需要单独下载。
 
-<ul>
+<hr>
+
+<ol>
   <li>
     Python / Numpy / Matplotlib 快速入门
-    [<a href="{{ "/notebooks/python-tutorial.ipynb" | prepend: site.baseurl }}">Download</a>]
+    [<a href="{{ "/notebooks/python-tutorial.ipynb" | prepend: site.baseurl }}">Source</a>]
     [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb">GitHub</a>]
     [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Fpython-tutorial.ipynb"
       target="_blank">Binder</a>]
+    [<a href="https://colab.research.google.com/github/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb"
+      target="_blank">Colab</a>]
   </li>
-</ul>
+  <li>等待添加中...</li>
+</ol>
+
+<hr>
 
 注：课程进行阶段，所有人都可以帮助老师和助教们改进内容，或提交自己的代码教程与个人笔记。
