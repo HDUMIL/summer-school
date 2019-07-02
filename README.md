@@ -6,7 +6,7 @@
 
 <a href="http://mil.hdu.edu.cn/" target="_blank">实验室主页</a> | <a href="https://hdumil.github.io/summer-school/" target="_blank">课程主页</a> | <a href="https://github.com/hdumil" target="_blank">GitHub 主页</a> | <a href="https://github.com/hdumil/summer-school/issues" target="_blank">讨论区</a>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) ![license](https://img.shields.io/badge/license-MIT-green.svg) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors) ![semester](https://img.shields.io/badge/semester-2019-blue.svg) [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LISCENSE) ![Powered by](https://img.shields.io/badge/Powered%20by-GitHub%20Pages-blue.svg) ![chat on](https://img.shields.io/badge/chat%20on-issues-yellow.svg) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hdumil/summer-school/master) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hdumil/summer-school/)
 
 媒体智能实验室(Media Intelligence Laboratory, MIL) 隶属于杭州电子科技大学计算机学院。原名计算机动画与多媒体分析实验室(Computer Animation and Multimedia Analysis LAB，CAMALAB), 成立于 2014 年。实验室的研究方向为多媒体与机器学习等人工智能相关前沿领域。具体而言，包含：图像检索、跨媒体表达、人脸检测与识别、图像分类/目标识别、图像质量评价、视频理解、图像生成、深度学习等前沿课题。
 
