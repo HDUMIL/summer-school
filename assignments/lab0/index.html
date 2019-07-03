@@ -17,15 +17,18 @@ description: 第一周为缓冲阶段，学写代码，无需提交实验结果�
 <div class="module-header">常见问题</div>
 
 <details>
-  <summary>从清华镜像源下载与配置 Anaconda </summary>
+  <summary>从清华镜像站下载 Anaconda 与配置 conda 和 pip 源</summary>
 
   <p>Anaconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载。</p>
   <p>TUNA 还提供了 Anaconda 仓库的镜像，运行以下命令:</p>
-  <pre class="highlighter-rouge">conda config --add channels
-https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  <pre class="highlighter-rouge">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --set show_channel_urls yes</pre>
-  即可添加 Anaconda Python 免费仓库。
+conda config --set show_channel_urls yes
+
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</pre>
+  即可添加 Anaconda Python 免费仓库。(国内还有除了清华以外的其它镜像站点)
 </details>
 
 <details>
@@ -38,22 +41,36 @@ conda config --set show_channel_urls yes</pre>
         class="highlighter-rouge">Anaconda Prompt Here</code>，并新建项 <code class="highlighter-rouge">command</code>；</li>
     <li>在 <code class="highlighter-rouge">command</code> 中默认值填入 <code class="highlighter-rouge">cmd.exe /s /k "title
         Anaconda" &amp;&amp; D:\Anaconda\Scripts\activate.bat D:\Anaconda</code> (注意更改 Anaconda 路径)；</li>
-    <li>再在 <code class="highlighter-rouge">command</code> 下新建字符串值 <code class="highlighter-rouge">Icon</code>，数值数据为
-      <code class="highlighter-rouge">D:\Anaconda\Menu\Iconleak-Atrous-Console.ico</code>，注意更改路径。</li>
+    <li>再在 <code class="highlighter-rouge">Anaconda Prompt Here</code> 下新建字符串值 <code
+        class="highlighter-rouge">Icon</code>，数值数据为
+      <code class="highlighter-rouge">D:\Anaconda\Menu\Iconleak-Atrous-Console.ico</code>，
+      注意更改路径，这一步是为了能够在右键菜单显示对应的图标。</li>
   </ol>
 </details>
 
 <details>
-  <summary>Jupyter Notebook 常用快捷键</summary>
-  https://shortcutworld.com/Jupyter-Notebook/win/Jupyter-Notebook_Shortcuts （谷歌一下）
+  <summary>Jupyter Notebook 常用快捷键(提升使用效率)</summary>
+  https://shortcutworld.com/Jupyter-Notebook/win/Jupyter-Notebook_Shortcuts (或谷歌一下)<br>
+  比较常用的有 <code class="highlighter-rouge">A</code> /
+  <code class="highlighter-rouge">B</code> /
+  <code class="highlighter-rouge">DD</code> /
+  <code class="highlighter-rouge">Y</code> /
+  <code class="highlighter-rouge">M</code> /
+  <code class="highlighter-rouge">Shift + Enter</code> /
+  <code class="highlighter-rouge">Alt+ Enter</code> / ... <br>
+  建议同时熟悉 Markdown 语法和 LaTeX 语法(网页端基于 MathJaX 使用).
+</details>
+
+<details>
+  <summary>相对路径找不到图片等本地资源文件</summary>
+  <p>这是因为网站默认以单文件形式下载，所有练习文件可以在 <a href="https://github.com/HDUMIL/summer-school/tree/master/notebooks/" target="_blank">这个链接</a>
+    找到，有的时候 assets 文件夹中的文件(如图片) 以相对路径的形式进行了引用，这些文件则需要单独进行下载。你也可以使用一定的方法，仅下载 GitHub 存储库中某个子文件夹的内容。</p>
 </details>
 
 <div class="module-header">练习材料</div>
 
 以下所有代码和文件在 Windows 10 + Anaconda 3 + Python 3.7 + Jupyter Notebook 环境下能正常使用。<br>
 如果你的本地环境配置好后仍无法运行，请先尝试自行分析解决，一段时间后再向助教寻求帮助。<br>
-所有笔记本文件可以在 <a href="https://github.com/HDUMIL/summer-school/tree/master/notebooks/" target="_blank">这个链接</a> 找到，有的时候
-assets 文件夹中的文件(如图片) 需要单独下载。
 
 <hr>
 
@@ -67,9 +84,16 @@ assets 文件夹中的文件(如图片) 需要单独下载。
     [<a href="https://colab.research.google.com/github/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb"
       target="_blank">Colab</a>]
   </li>
-  <li>等待添加中...</li>
+  <li>传统计算机视觉特征表达与处理
+    [<a href="{{ "/notebooks/traditional-cv.ipynb" | prepend: site.baseurl }}">Source</a>]
+    [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb">GitHub</a>]
+    [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Ftraditional-cv.ipynb"
+      target="_blank">Binder</a>]
+    [<a href="https://colab.research.google.com/github/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb"
+      target="_blank">Colab</a>]
+  </li>
 </ol>
 
 <hr>
 
-注：课程进行阶段，所有人都可以帮助老师和助教们改进内容，或提交自己的代码教程与个人笔记。
+<p>注：课程进行阶段，所有人都可以帮助老师和助教们改进内容，或提交自己的代码教程与个人笔记。</p>
