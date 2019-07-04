@@ -8,7 +8,7 @@ description: 第一周为缓冲阶段，学写代码，无需提交实验结果�
 <ul>
   <li>请确保在你的电脑上已经安装好 Anaconda 3，并配置有相应的科学计算环境，保证完美运行。</li>
   <ul>如果还没安装和配置好环境，临时解决方法为：
-    <li>可使用 Nbviewer 在云端预览纯静态 notebook 内容，适合用来复习；</li>
+    <li>可使用 GitHub / Nbviewer 在云端预览纯静态 notebook 内容，适合用来复习；</li>
     <li>可使用 Binder 在云端运行 notebook 文件，但渲染速度较慢，且支持 Python 默认环境。</li>
     <li>可使用 Google Colab 在云端运行 notebook 文件，默认支持 Numpy 等科学计算环境（推荐）。</li>
   </ul>
@@ -18,7 +18,7 @@ description: 第一周为缓冲阶段，学写代码，无需提交实验结果�
 <div class="module-header">常见问题</div>
 
 <details>
-  <summary>从清华镜像站下载 Anaconda 与配置 conda 和 pip 源</summary>
+  <summary>从清华镜像站下载 Anaconda 与配置 conda 和 pip 源(不然将从国外下载...)</summary>
 
   <p>Anaconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载。</p>
   <p>TUNA 还提供了 Anaconda 仓库的镜像，运行以下命令:</p>
@@ -29,7 +29,10 @@ conda config --set show_channel_urls yes
 pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 </pre>
-  即可添加 Anaconda Python 免费仓库。(国内还有除了清华以外的其它镜像站点)
+  即可添加 Anaconda Python 免费仓库。(国内还有除了清华以外的其它镜像站点) <br>
+  如果你使用 pip 下载速度依旧很慢，则可以访问： <br>
+  https://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
+  使用 Ctrl + F 寻找到对应的包，人为下载 whl 文件到本地进行安装。
 </details>
 
 <details>
@@ -80,6 +83,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   <li>
     Python / Numpy / Matplotlib 快速入门
     [<a href="{{ "/notebooks/python-tutorial.ipynb" | prepend: site.baseurl }}">Source</a>]
+    [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb"
+      target="_blank">GitHub</a>]
     [<a href="https://nbviewer.jupyter.org/github/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb"
       target="_blank">Nbviewer</a>]
     [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Fpython-tutorial.ipynb"
@@ -89,6 +94,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   </li>
   <li>传统计算机视觉特征表达与处理
     [<a href="{{ "/notebooks/traditional-cv.ipynb" | prepend: site.baseurl }}">Source</a>]
+    [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb"
+      target="_blank">GitHub</a>]
     [<a href="https://nbviewer.jupyter.org/github/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb"
       target="_blank">Nbviewer</a>]
     [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Ftraditional-cv.ipynb"
@@ -98,6 +105,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   </li>
   <li>*可选：OpenCV 扫雷机器人项目实战
     [<a href="{{ "/notebooks/minesweeper-bot.ipynb" | prepend: site.baseurl }}">Source</a>]
+    [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/minesweeper-bot.ipynb"
+      target="_blank">GitHub</a>]
     [<a href="https://nbviewer.jupyter.org/github/HDUMIL/summer-school/blob/master/notebooks/minesweeper-bot.ipynb"
       target="_blank">Nbviewer</a>]
     [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Fminesweeper-bot.ipynb"
