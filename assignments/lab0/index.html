@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "实验 #0 基础编程练习"
+title: "实验 #0 基础编程练习与实战"
 description: 第一周为缓冲阶段，学写代码，无需提交实验结果。
 ---
 
@@ -8,7 +8,8 @@ description: 第一周为缓冲阶段，学写代码，无需提交实验结果�
 <ul>
   <li>请确保在你的电脑上已经安装好 Anaconda 3，并配置有相应的科学计算环境，保证完美运行。</li>
   <ul>如果还没安装和配置好环境，临时解决方法为：
-    <li>可使用 GitHub 在云端预览 notebook 内容；Binder 可直接在云端运行，但只有 Python 默认环境。</li>
+    <li>可使用 Nbviewer 在云端预览纯静态 notebook 内容，适合用来复习；</li>
+    <li>可使用 Binder 在云端运行 notebook 文件，但渲染速度较慢，且支持 Python 默认环境。</li>
     <li>可使用 Google Colab 在云端运行 notebook 文件，默认支持 Numpy 等科学计算环境（推荐）。</li>
   </ul>
 </ul>
@@ -63,7 +64,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 <details>
   <summary>相对路径找不到图片等本地资源文件</summary>
-  <p>这是因为网站默认以单文件形式下载，所有练习文件可以在 <a href="https://github.com/HDUMIL/summer-school/tree/master/notebooks/" target="_blank">这个链接</a>
+  <p>这是因为网站默认以单文件形式下载，所有练习文件可以在 <a href="https://github.com/HDUMIL/summer-school/tree/master/notebooks/"
+      target="_blank">这个链接</a>
     找到，有的时候 assets 文件夹中的文件(如图片) 以相对路径的形式进行了引用，这些文件则需要单独进行下载。你也可以使用一定的方法，仅下载 GitHub 存储库中某个子文件夹的内容。</p>
 </details>
 
@@ -78,7 +80,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   <li>
     Python / Numpy / Matplotlib 快速入门
     [<a href="{{ "/notebooks/python-tutorial.ipynb" | prepend: site.baseurl }}">Source</a>]
-    [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb">GitHub</a>]
+    [<a href="https://nbviewer.jupyter.org/github/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb"
+      target="_blank">Nbviewer</a>]
     [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Fpython-tutorial.ipynb"
       target="_blank">Binder</a>]
     [<a href="https://colab.research.google.com/github/HDUMIL/summer-school/blob/master/notebooks/python-tutorial.ipynb"
@@ -86,10 +89,20 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   </li>
   <li>传统计算机视觉特征表达与处理
     [<a href="{{ "/notebooks/traditional-cv.ipynb" | prepend: site.baseurl }}">Source</a>]
-    [<a href="https://github.com/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb">GitHub</a>]
+    [<a href="https://nbviewer.jupyter.org/github/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb"
+      target="_blank">Nbviewer</a>]
     [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Ftraditional-cv.ipynb"
       target="_blank">Binder</a>]
     [<a href="https://colab.research.google.com/github/HDUMIL/summer-school/blob/master/notebooks/traditional-cv.ipynb"
+      target="_blank">Colab</a>]
+  </li>
+  <li>*可选：OpenCV 扫雷机器人项目实战
+    [<a href="{{ "/notebooks/minesweeper-bot.ipynb" | prepend: site.baseurl }}">Source</a>]
+    [<a href="https://nbviewer.jupyter.org/github/HDUMIL/summer-school/blob/master/notebooks/minesweeper-bot.ipynb"
+      target="_blank">Nbviewer</a>]
+    [<a href="https://mybinder.org/v2/gh/HDUMIL/summer-school/master?filepath=%2Fnotebooks%2Fminesweeper-bot.ipynb"
+      target="_blank">Binder</a>]
+    [<a href="https://colab.research.google.com/github/HDUMIL/summer-school/blob/master/notebooks/minesweeper-bot.ipynb"
       target="_blank">Colab</a>]
   </li>
 </ol>
