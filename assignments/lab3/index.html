@@ -6,26 +6,32 @@ description: 结合之前的实践，对无监督学习的经典算法进行实�
 
 <div class="module-header">作业说明</div>
 <ul>
-    <li>使用 MNIST 数据集源码级实现朴素贝叶斯算法；</li>
+    <li>使用 MNIST 数据集源码级分别实现朴素贝叶斯、PCA、Kmeans 算法；</li>
     <li>阅读论文《An Analysis of Single­Layer Networks in Unsupervised Feature Learning》：</li>
     <ul>
-        <li>基于上面的论文和本周所学内容，在 MNIST 数据集上源码级实现 PCA 降维和 K 均值聚类；</li>
+        <li>基于上面的论文和本周所学内容，在 MNIST 数据集上源码级实现 PCA 降维和 K 均值聚类过程；</li>
         <li>将你的实现结果与使用 Scikit-Learn 框架的实现进行对比，尝试改进你的实现方法；</li>
         <li>撰写技术报告，对涉及到的原理和实现方法与结果进行简要解释(注意不是翻译论文)；</li>
     </ul>
 </ul>
 
-本周的作业初稿和终稿内容相同，大家有足够的时间在讨论课后进行内容改进。<br>
+初稿提交时最低要求是完成三个基础算法的实现，大家有足够的时间在讨论课后进行内容整合和改进。<br>
+关于论文的细节解释可以尝试使用谷歌搜索，代码细节可以参考博客或 GitHub 上面的一些实现。<br>
+<ul>
+    <li>论文中提到的分块过程可能对 28*28 像素的 MNIST 数据集可能意义不大，可最后考虑实现；</li>
+    <li>论文中提到的找到中心的方法有四种，大家只需要关注和实现 Kmeans 方法。</li>
+</ul>
 注：本周开始讨论课改为学生上台进行演讲，请所有人提前做好相关准备。<br>
 
 <div class="module-header">注意事项</div>
 <ul>
-    <li>技术报告不要求现在就能使用 LaTeX 语法完成，可使用 MarkDown 导出 PDF；</li>
+    <li>技术报告不要求现在就能使用 LaTeX 语法完成，可使用 MarkDown 语法导出 PDF；</li>
     <li>可换用 Fashion-MNIST 数据集或是 Yale 数据集(鼓励大家随便玩各种不同的数据集)；</li>
     <li>可使用 DB-SCAN / ICA 等其它的聚类或者降维算法作为内容的补充；</li>
 </ul>
 
 <div class="module-header">提交格式</div>
+邮件正文中：<b>推荐一下周围的帮你起飞的同学，增大他/她上台演讲的可能性，欢迎自荐。</b><br>
 将所有需要提交的文件压缩至单个的 zip 文件(注意不是 rar 格式)，命名规范为：<br>
 “MIL2019-姓名-实验三代码与报告.zip”<br>
 在压缩文件中必须有一个 readme.md 文件，对文件组织逻辑和内容进行说明。<br>
